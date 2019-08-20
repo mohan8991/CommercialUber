@@ -1,11 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from "./components/Header";
+// import logo from '../logo.svg';
+// import './App.css';
+// import Header from ".//Header";
 
-function App() {
+import Maps from "./Maps";
+
+function App(){
   return (
-      <Header/>
+      <Maps/>
   );
 }
 
