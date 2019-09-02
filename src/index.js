@@ -9,7 +9,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //TODO: Components for User Signup form
 //TODO: Singin form
-//TODO: Integration with google maps
 /* TODO:Routing, proximity, Current location        */
 //TODO: Change the header to a search bar
 //TODO: To handle URL based redirection
