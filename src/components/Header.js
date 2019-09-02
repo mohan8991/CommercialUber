@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Navbar, Nav, Form, FormControl, Dropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserAlt, faCreditCard } from '@fortawesome/free-solid-svg-icons'
+
+
 import HeadStyle from "./Header.css";
 //TODO: Fix Demo text
 
@@ -18,6 +22,8 @@ function Header() {
                         <Button variant="outline-success">Search</Button>
                     </Form>
             </Navbar.Collapse>
+
+            {/*Profile Dropdown*/}
             <div className='profile-container dropdown'>
                 <Dropdown drop="down">
                     <Dropdown.Toggle variant="success" id="dropdown-basic" className="profile" as="div">
@@ -25,10 +31,10 @@ function Header() {
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Credit</Dropdown.Item>
+                        <Dropdown.Item href="profile"><FontAwesomeIcon icon={faUserAlt} />Profile</Dropdown.Item>
+                        <Dropdown.Item href="account"><FontAwesomeIcon icon={faCreditCard} />Credit</Dropdown.Item>
                         <Dropdown.Divider/>
-                        <Dropdown.Item href="#/action-3">Logout</Dropdown.Item>
+                        <Dropdown.Item href="logout">Logout</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </div>
