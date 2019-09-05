@@ -1,9 +1,9 @@
-Nav {
-    border-radius: 15px;
-}
-
 .header-search{
     width:500px;
+}
+
+nav {
+    background-color: #FFFFFF;
 }
 
 .profile {
