@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import logo from '../logo.svg';
-// import './App.css';
+import './App.css';
 
 import Maps from "./Maps";
 import Header from "./Header";
@@ -13,11 +13,13 @@ function App(){
       <Router>
           <div>
               <Header/>
-              <main className='container'>
-                <Route exact path="/" component={Maps} />
-                <Route path="/profile" component={Profile} />
-                <Route path="/account" component={Account} />
-              </main>
+              <div className="container-wrapper">
+                  <main className='container'>
+                    <Route exact path="/" component={Maps} />
+                    <Route path="/profile" component={Profile} />
+                    <Route path="/account" component={Account} />
+                  </main>
+              </div>
           </div>
       </Router>
   );

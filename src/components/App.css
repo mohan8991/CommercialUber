@@ -1,0 +1,19 @@
+@media (min-width: 1200px) {
+    div .container {
+        max-width: 900px;
+    }
+}
+
+.container-wrapper {
+    min-height: 92.5vh;
+    background-image: url("https://wallpaperplay.com/walls/full/b/2/9/284968.jpg");
+    padding: 20px 10px 10px 10px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 4px;
+    height: 100%;
+    opacity: .9;
+    padding: 15px;
+}
