@@ -1,5 +1,6 @@
 import React from "react";
 import {Form, Row, Col, Button, Image} from "react-bootstrap";
+import ProfileComp from "./ProfileComp";
 
 class Profile extends React.Component{
     constructor(props) {
@@ -13,91 +14,21 @@ class Profile extends React.Component{
                 <Row>
                     <Col xs={8} md={8}>
                         <Form>
-                        <Form.Row controlId="formHorizontalFirstName">
-                            <Form.Label column sm={3}>
-                                First Name
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="Mohan Krishna" />
-                            </Col>
-                        </Form.Row>
 
-                        <Form.Row controlId="formHorizontalLastName">
-                            <Form.Label column sm={3}>
-                                Last Name
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="Gopi Krishna" />
-                            </Col>
-                        </Form.Row>
+                            <ProfileComp label="First Name" defaultValue="Mohan Krishna" controlId="formHorizontalFirstName" readOnly="true" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="Last Name" defaultValue="Gopi Krishna" controlId="formHorizontalLastName" readOnly="true" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="Email" defaultValue="email@example.com" controlId="formHorizontalEmail" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="Phone" defaultValue="(123)412-1359" controlId="formHorizontalPhone" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="Address" defaultValue="1234 Circle St," controlId="formHorizontalAddress1" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="Address 2" defaultValue="Apartment, studio, or floor" controlId="formHorizontalAddress2" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="City" defaultValue="Oviedo" controlId="formHorizontalCity" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="State" defaultValue="FL" controlId="formHorizontalState" readOnly="false" labelCol="3" inputCol="6"/>
+                            <ProfileComp label="ZIP" defaultValue="32765" controlId="formHorizontalPin" readOnly="false" labelCol="3" inputCol="6"/>
 
-                        <Form.Row controlId="formHorizontalEmail">
-                            <Form.Label column sm={3}>
-                                Email
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="email@example.com" />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalPhone">
-                            <Form.Label column sm={3}>
-                                First Name
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="(123)412-1359" />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalAddress1">
-                            <Form.Label column sm={3}>
-                                Address
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="1234 Circle St," />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalAddress2">
-                            <Form.Label column sm={3}>
-                                Address 2
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="Apartment, studio, or floor" />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalCity">
-                            <Form.Label column sm={3}>
-                                City
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="Oviedo" />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalState">
-                            <Form.Label column sm={3}>
-                                State
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="FL" />
-                            </Col>
-                        </Form.Row>
-
-                        <Form.Row controlId="formHorizontalPin">
-                            <Form.Label column sm={3}>
-                                ZIP
-                            </Form.Label>
-                            <Col sm={6}>
-                                <Form.Control plaintext readOnly defaultValue="32765" />
-                            </Col>
-                        </Form.Row>
-
-                        <Button variant="primary" type="submit">
-                            Update
-                        </Button>
-                    </Form>
+                            <Button variant="primary" type="submit">
+                                Update
+                            </Button>
+                        </Form>
                     </Col>
                     <Col xs={4} md={4}>
                         <Row>
