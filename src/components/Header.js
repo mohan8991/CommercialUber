@@ -32,7 +32,7 @@ function Header() {
 
                     <Dropdown.Menu>
                         <Dropdown.Item href="profile"><FontAwesomeIcon icon={faUserAlt} />Profile</Dropdown.Item>
-                        <Dropdown.Item href="account"><FontAwesomeIcon icon={faCreditCard} />Credit</Dropdown.Item>
+                        <Dropdown.Item href="account"><FontAwesomeIcon icon={faCreditCard} />Payment</Dropdown.Item>
                         <Dropdown.Divider/>
                         <Dropdown.Item href="logout">Logout</Dropdown.Item>
                     </Dropdown.Menu>
