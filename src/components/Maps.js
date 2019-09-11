@@ -38,12 +38,14 @@ class Maps extends React.Component{
             </GoogleMap>
         ));
         return(
+            <main className='container'>
             <MapWithAMarker
                 googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDlaVs2vrduR5P6uhzwKy8INmzTivsAhs&v=3.exp&libraries=geometry,drawing,places"
                 loadingElement={<div style={{height: `100%`}}/>}
                 containerElement={<div style={{height: `761px`}}/>}
                 mapElement={<div style={{height: `100%`}}/>}
             />
+            </main>
         )
     }
 }

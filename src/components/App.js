@@ -14,11 +14,9 @@ function App(){
           <div>
               <Header/>
               <div className="container-wrapper">
-                  <main className='container'>
                     <Route exact path="/" component={Maps} />
                     <Route path="/profile" component={Profile} />
                     <Route path="/account" component={Account} />
-                  </main>
               </div>
           </div>
       </Router>

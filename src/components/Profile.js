@@ -8,7 +8,7 @@ class Profile extends React.Component{
     }
     render() {
         return(
-            <div>
+            <main className='container'>
                 <h2>Profile</h2>
                 <br/>
                 <Row>
@@ -39,7 +39,7 @@ class Profile extends React.Component{
                         </Row>
                     </Col>
                 </Row>
-            </div>
+            </main>
         )
     }
 
