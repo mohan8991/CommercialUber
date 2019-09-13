@@ -3,9 +3,6 @@ import {Form, Row, Col, Button, Image} from "react-bootstrap";
 import ProfileComp from "./ProfileComp";
 
 class Profile extends React.Component{
-    constructor(props) {
-        super(props)
-    }
     render() {
         return(
             <main className='container'>
