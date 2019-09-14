@@ -23,11 +23,13 @@ function App(){
 
   return (
       <Router>
-          {(isLoggedin) ? (
+          {(!isLoggedin()) ? (
             <div>
+          <div className="container-wrapper headerless">
                 <Route path="/signup" component={SignUp} />
                 <Route path="/signin" component={SignIn} />
                 <Route path="/logout" component={Logout} />
+              </div>
             </div>
             ):(
             <div>
